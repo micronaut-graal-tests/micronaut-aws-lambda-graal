@@ -26,6 +26,7 @@ buildNumber.properties
 gradle/
 build/
 gradlew*
+native-image/
 
 # Exclude maven wrapper
 !/.mvn/wrapper/maven-wrapper.jar
