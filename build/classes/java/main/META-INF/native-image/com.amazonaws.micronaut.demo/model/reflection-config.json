@@ -1,0 +1,6 @@
+[ {
+  "name" : "com.amazonaws.micronaut.demo.model.Pet",
+  "allDeclaredFields" : true,
+  "allPublicMethods" : true,
+  "allDeclaredConstructors" : true
+} ]

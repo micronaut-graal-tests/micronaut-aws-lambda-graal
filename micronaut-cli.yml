@@ -1,5 +1,5 @@
 profile: service
-defaultPackage: micronaut.aws.lambda.graal
+defaultPackage: com.amazonaws.micronaut.demo
 ---
 testFramework: junit
 sourceLanguage: java
