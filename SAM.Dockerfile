@@ -5,7 +5,5 @@ RUN apk update && \
     apk add --no-cache --virtual build-deps build-base gcc && \
     pip install aws-sam-cli && \
     apk del build-deps
-RUN mkdir /app
-WORKDIR /app
-EXPOSE 3001
-ENTRYPOINT ["./sam_entrypoint.sh"]
+EXPOSE 3000
+ENTRYPOINT ["./sam_local.sh"]

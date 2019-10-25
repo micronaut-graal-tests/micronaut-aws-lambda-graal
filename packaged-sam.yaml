@@ -10,7 +10,7 @@ Resources:
     Properties:
       Handler: not.used.in.provided.runtime
       Runtime: provided
-      CodeUri: native-image/function.zip
+      CodeUri: s3://oci-oss-work/75e2b6fe16710e18034aa18dfdc6e42c
       MemorySize: 512
       Policies: AWSLambdaBasicExecutionRole
       Tracing: Active
@@ -21,10 +21,10 @@ Resources:
           Properties:
             Path: /{proxy+}
             Method: any
-
 Outputs:
   MicronautNativeServiceApi:
     Description: URL for application
-    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/$name'
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/$name
     Export:
       Name: MicronautNativeServiceApi
